@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Byekan', Tahoma, sans-serif;
 }
 
 body {
   margin: 0;
   background-color: #3f3f3f;
+  font-family: 'Byekan', Tahoma, sans-serif;
+  direction: rtl;
 }
 
+@font-face {
+  font-family: 'Byekan';
+  src: url('./assets/fonts/BYekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
