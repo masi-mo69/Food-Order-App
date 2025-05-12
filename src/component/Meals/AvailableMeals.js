@@ -16,7 +16,7 @@ const AvailableMeals = () => {
       );
 
       if(!response.ok) {
-        throw new Error('Something went wrong');
+        throw new Error('مشکلی پیش آمد.');
       }
       const responseData = await response.json();
 
@@ -45,7 +45,7 @@ const AvailableMeals = () => {
   if(isLoading) {
     return (
       <section className={classes.MealsLoading}>
-        <p>Loading ...</p>
+        <p>در حال بارگذاری ...</p>
       </section>
     )
   }

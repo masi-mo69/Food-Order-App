@@ -71,30 +71,30 @@ const Checkout = (props) => {
   return (
     <form className={classes.form} onSubmit={confirmHandler}>
       <div className={nameControlClasses}>
-        <label htmlFor='name'>Your Name</label>
+        <label htmlFor='name'>نام</label>
         <input type='text' id='name' ref={nameInputRef} />
-        {!formInputsValidity.name && <p>Please enter a valid name!</p>}
+        {!formInputsValidity.name && <p>لطفا یک نام معتبر وارد کنید!</p>}
       </div>
       <div className={streetControlClasses}>
-        <label htmlFor='street'>Street</label>
+        <label htmlFor='street'>آدرس</label>
         <input type='text' id='street' ref={streetInputRef}/>
-        {!formInputsValidity.street && <p>Please enter a valid street!</p>}
+        {!formInputsValidity.street && <p>لطفا یک آدرس معتبر وارد کنید!</p>}
       </div>
       <div className={postalCodeControlClasses}>
-        <label htmlFor='postal'>Postal Code</label>
+        <label htmlFor='postal'>کد پستی</label>
         <input type='text' id='postal' ref={postalCodeInputRef}/>
-        {!formInputsValidity.postalCode && <p>Please enter a valid postal code!</p>}
+        {!formInputsValidity.postalCode && <p>لطفا یک کدپستی معتبر وارد کنید!</p>}
       </div>
       <div className={cityControlClasses}>
-        <label htmlFor='city'>City</label>
+        <label htmlFor='city'>شهر</label>
         <input type='text' id='city' ref={cityInputRef}/>
-        {!formInputsValidity.city && <p>Please enter a valid city!</p>}
+        {!formInputsValidity.city && <p>لطفا یک شهر معتبر وارد کنید!</p>}
       </div>
       <div className={classes.actions}>
         <button type='button' onClick={props.onCancel}>
-          Cancel
+          لغو
         </button>
-        <button className={classes.submit}>Confirm</button>
+        <button className={classes.submit}>تایید</button>
       </div>
     </form>
   );
